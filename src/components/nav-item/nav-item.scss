@@ -1,0 +1,39 @@
+.nav-item{
+  display: flex;
+  align-self: center;
+}
+
+.nav-item .icon .primary {
+  stroke-width: 20;
+  stroke: var(--primary);
+}
+
+.nav-item .icon .danger {
+  stroke-width: 20;
+  stroke: var(--red);
+}
+
+.nav-item .icon .success {
+  stroke-width: 20;
+  stroke: var(--grren);
+}
+
+.nav-item .content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dark-theme {
+  .nav-item {
+    .caption {
+      color: #a2a2a2;
+    }
+  }
+}
+
+.light-theme {
+  .nav-item .caption {
+    color: #767678;
+  }
+}

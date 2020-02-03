@@ -1,0 +1,80 @@
+@import './styles//variables';
+
+.App {
+  position: relative;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 15% 85%;
+}
+
+.nav-wrapper {
+  padding: 10px;
+  height: 100%;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.kt-fluid {
+  width: 100%;
+}
+
+.icon .primary {
+  fill: var(--primary);
+}
+
+.icon .danger {
+  fill: var(--red);
+}
+
+
+
+.icon.small {
+  width: 18px;
+  height: auto;
+}
+
+.logo.medium {
+  width: 20px;
+  height: auto;
+}
+
+.dark-theme {
+  .main-content__wrapper {
+    background: var(--dark);
+    color: var(--white);
+  }
+
+  .user .logo {
+    fill: var(--primary);
+    background: #313232;
+  }
+
+  color: var(--white);
+  .nav-wrapper, .nav {
+    background:  var(--nav-dark);
+  }
+
+  .icon .success {
+  fill: var(--green);
+}
+}
+
+.light-theme {
+  .main-content__wrapper {
+    background: var(--light-bg);
+  }
+
+  .nav-wrapper {
+    background: #c5cbd3;
+  }
+
+  .user .logo {
+    background: #5767a9;
+  }
+
+  .icon .success {
+    fill: #43827f;
+  }
+}

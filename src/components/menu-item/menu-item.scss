@@ -1,0 +1,15 @@
+.menu-item {
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  grid-column-gap: 8px;
+  padding: 7px 0;
+}
+
+.menu-item svg {
+  width: 18px;
+}
+
+.menu-item .content {
+  font-weight: 600;
+  font-size: 1.2rem;
+}

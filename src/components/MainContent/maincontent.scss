@@ -1,0 +1,94 @@
+.main-content {
+  padding: 10px 20px;
+  min-height: 86vh;
+}
+
+.footer {
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.footer-content button {
+  padding: 12px;
+  width: 100%;
+  text-align: left;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+}
+
+.footer-content .icon {
+  margin-right: 10px;
+}
+.main-content .header-caption {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-content__wrapper .header {
+  height: 60px;
+}
+
+.main-content__wrapper .icon {
+  width: 30px;
+  height: auto;
+}
+
+.main-content__wrapper .footer-content .icon {
+  width: 18px;
+  height: auto;
+}
+
+.company-icon {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.company-icon h1 {
+  font-size: 2.5rem;
+  color: var(--primary);
+}
+
+
+.content {
+  // width: 100%;
+}
+
+.inline-icons {
+  display: flex;
+}
+
+.inline-icons span {
+  margin-left: 10px;
+}
+
+.dark-theme {
+  .footer-content button{
+    background:  #313232;
+    color: var(--primary);
+  }
+
+  .footer .footer-content svg {
+    fill: var(--primary);
+  }
+}
+
+.light-theme {
+  .footer-content button {
+    background: #5767a9;
+    color: var(--white);
+  }
+
+  .footer-content svg {
+    fill: var(--white);
+  }
+
+  .inline-icons svg {
+    fill: var(--white);
+  }
+
+  .big-caption h1 {
+    color: var(--white);
+  }
+}

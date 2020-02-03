@@ -1,26 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import './App.scss';
+import Nav from './components/nav/nav';
+import Menu from './components/menu/menu';
+import Maincontent from './components/MainContent/maincontent';
 
-function App() {
+const App = () => {
+  const [darkTheme, setTheme] = useState(true);
+
+  const toggleTheme = () => {
+    setTheme(!darkTheme);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`App ${darkTheme ? 'dark-theme': 'light-theme'}`}>
+      <div className="nav">
+        <div className="nav-wrapper">
+          <Nav 
+            onClick={toggleTheme}
+            darkTheme={darkTheme}
+          />
+          <Menu classes="menu-wrapper"/>
+        </div>
+      </div>
+      <Maincontent/>
     </div>
-  );
+  ); 
 }
 
 export default App;

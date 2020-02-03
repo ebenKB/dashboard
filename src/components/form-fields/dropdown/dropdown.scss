@@ -1,0 +1,167 @@
+.custom-dropdown {
+width: 100%;
+}
+
+.dropdown .cta {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.dropdown .icon-wrapper {
+  padding: 1px 6px;
+  border-radius: 4px;
+}
+
+.dropdown .cta button .small.logo {
+  margin-left: 8px;
+}
+
+.custom-dropdown .item {
+  padding: 15px;
+  margin: 3px 0;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.custom-dropdown .item svg {
+  width: 18px;
+  height: auto;
+}
+
+.small.logo {
+  width: 9px;
+  height: auto;
+}
+
+.inline-icons .logo.medium {
+  width: 36px;
+}
+
+.user .logo {
+  padding: 5px 10px;
+}
+
+.user .logo,
+.dropdown .cta button {
+  border-radius: 4px;
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    // color: #666;
+}
+
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+}
+
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #F87DA9;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.dark-theme {
+  .custom-dropdown .item svg {
+    fill: #fff;
+  }
+
+  .custom-dropdown .item svg {
+    fill: #acabab;
+  }
+
+  .custom-dropdown .item {
+    background: #313232;;
+  }
+
+  .dropdown .cta svg{
+    fill: var(--primary) ;
+  }
+
+  .dropdown .cta button,
+  .dropdown .cta .icon-wrapper {
+    background: #313232;
+  }
+
+  .dropdown .cta button {
+    outline: #313232;
+    border: none;
+    padding: 4px 8px;
+    color:  var(--primary);
+    margin-right: 8px;
+  }
+
+  [type="radio"]:checked + label:before,
+  [type="radio"]:not(:checked) + label:before {
+    border: 2px solid #ddd;
+  }
+}
+
+.light-theme {
+  [type="radio"]:checked + label:before,
+  [type="radio"]:not(:checked) + label:before {
+    border: 2px solid #767678;
+  }
+
+  .custom-dropdown .item {
+    background: var(--white);
+  }
+
+  .custom-dropdown .label svg {
+    fill: #8b8b8d;
+  }
+
+  .dropdown .cta button,
+  .dropdown .cta .icon-wrapper {
+    background: #5767a9;
+    border: none;
+    color: var(--white);
+    fill: var(--white);
+  }
+
+  .dropdown .cta button {
+    outline: #5767a9;
+    border: none;
+    padding: 4px 8px;
+    margin-right: 8px;
+  }
+}
