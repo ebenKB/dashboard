@@ -7,7 +7,7 @@ import { ReactComponent as Close } from '../../../svg/close.svg';
 const DropdownExampleSimple = () => {
   const [canShowOptions, showOptions] = useState(true); 
 
-  const toggleShowOption =() => {
+  const toggleShowOption = () => {
     showOptions(!canShowOptions);
   }
 
@@ -16,7 +16,8 @@ const DropdownExampleSimple = () => {
       <div className="cta">
         <button
           onClick ={toggleShowOption}
-        >Sorted by Importance
+        >
+          Sorted by Importance
           <ArrowDown className="small logo"/>
         </button>
         <div className="icon-wrapper">
@@ -37,25 +38,24 @@ const DropdownExampleSimple = () => {
                   <StarIcon/>
                 </div>
               </div>
-           
-            <div className="item">
-              <div className="content">
-                <input type="radio" id="test2" name="radio-group" /> 
-                <label htmlFor="test2">Have portfolio</label>
+              <div className="item">
+                <div className="content">
+                  <input type="radio" id="test2" name="radio-group" /> 
+                  <label htmlFor="test2">Have portfolio</label>
+                </div>
+                <div className="label">
+                  <StarIcon/>
+                </div>
               </div>
-              <div className="label">
-                <StarIcon/>
+              <div className="item">
+                <div className="content">
+                  <input type="radio" id="test3" name="radio-group" />
+                  <label htmlFor="test3">I css challenge daily</label>
+                </div>
+                <div className="label">
+                  <StarIcon/>
+                </div>
               </div>
-            </div>
-            <div className="item">
-              <div className="content">
-                <input type="radio" id="test3" name="radio-group" />
-                <label htmlFor="test3">I css challenge daily</label>
-              </div>
-              <div className="label">
-                <StarIcon/>
-              </div>
-            </div>
             </form>
           </div>
         )

@@ -58,8 +58,8 @@ const Menu = ({...rest}) => {
     {
       content: '1 Timothy Bible Questions'
     }
-
-  ])
+  ]);
+  
   return (
     <div className={`menu ${rest.classes}`}>
       {

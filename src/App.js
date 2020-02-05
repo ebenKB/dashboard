@@ -12,7 +12,7 @@ const App = () => {
   }
 
   return (
-    <div className={`App ${darkTheme ? 'dark-theme': 'light-theme'}`}>
+    <div className={`App ${darkTheme ? 'dark-theme' : 'light-theme'}`}>
       <div className="nav">
         <div className="nav-wrapper">
           <Nav 

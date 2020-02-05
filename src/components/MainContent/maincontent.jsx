@@ -7,7 +7,7 @@ import {ReactComponent as TaskIcon} from '../../svg/plus.svg';
 import './maincontent.scss';
 import DropdownExampleSimple from '../form-fields/dropdown/dropdown';
 
-const Maincontent = props => {
+const Maincontent = () => {
   return (
     <div className="main-content__wrapper">
       <div className="header"></div>
@@ -20,7 +20,6 @@ const Maincontent = props => {
                 <h1>Skill</h1>
               </span>
             </div>
-            
           </div>
           <div className="user inline-icons">
             <span>
@@ -45,10 +44,6 @@ const Maincontent = props => {
       </div>
     </div>
   )
-}
-
-Maincontent.propTypes = {
-
 }
 
 export default Maincontent

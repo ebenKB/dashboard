@@ -17,7 +17,7 @@ const MenuItem = ({content}) => {
 
     // check if there are more characters left
     if(counter < contentArray.length) {
-      trimmedContent=`${trimmedContent}...`;
+      trimmedContent = `${trimmedContent}...`;
     }
 
     return trimmedContent.replace('*', ' ');

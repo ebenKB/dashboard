@@ -1,8 +1,6 @@
 import React from 'react';
 import './theme-button.scss';
 
-
-
 class ThemedButton extends React.Component {
   render() {
     let props = this.props;

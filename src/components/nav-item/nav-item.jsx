@@ -16,7 +16,7 @@ const NavItem = ({type, title, caption}) => {
        return (
         <Star className="primary"/>
       )
-    } else if(type=== "checklist"){
+    } else if(type === "checklist"){
       return (
         <Checklist className="success"/>
       )
