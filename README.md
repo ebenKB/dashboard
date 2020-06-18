@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# Demo available at https://kb-dashboard.netlify.app/
+## Demo available at https://kb-dashboard.netlify.app/
 
 ## Available Scripts
 
